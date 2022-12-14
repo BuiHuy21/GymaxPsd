@@ -14,16 +14,17 @@ $(document).ready(function () {
                 $(".navbar").removeClass("active");
                 $(".cover").removeClass("active");
         });
-         $(".top-selling-row").hide();
-         $(".top-selling-row:first-child").fadeIn();
         $(".bread").click(function (e) { 
+                $(".container").hide();
+                $(".container:first-child").fade();
                 e.preventDefault();
                 $(".bread").removeClass("active");
                 $(this).addClass("active");
+
                 //show
                let id_tab = $(this).attr("href");
-                $(".top-selling-row").hide();
                $(id_tab).fadeIn();
+        //        alert(id_tab);
                return false;
         });
         

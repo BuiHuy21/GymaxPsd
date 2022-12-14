@@ -17,6 +17,7 @@ $(document).ready(function () {
          $(".top-selling-row").hide();
          $(".top-selling-row:first-child").fadeIn();
         $(".bread").click(function (e) { 
+                
                 e.preventDefault();
                 $(".bread").removeClass("active");
                 $(this).addClass("active");

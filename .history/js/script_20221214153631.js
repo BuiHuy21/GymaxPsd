@@ -14,9 +14,9 @@ $(document).ready(function () {
                 $(".navbar").removeClass("active");
                 $(".cover").removeClass("active");
         });
-         $(".top-selling-row").hide();
-         $(".top-selling-row:first-child").fadeIn();
         $(".bread").click(function (e) { 
+                $(".top-selling-row").hide();
+                $(".top-selling-row:first-child").fadeIn();
                 e.preventDefault();
                 $(".bread").removeClass("active");
                 $(this).addClass("active");
@@ -24,6 +24,7 @@ $(document).ready(function () {
                let id_tab = $(this).attr("href");
                 $(".top-selling-row").hide();
                $(id_tab).fadeIn();
+        //        alert(id_tab);
                return false;
         });
         
